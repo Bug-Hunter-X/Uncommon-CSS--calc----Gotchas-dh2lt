@@ -1,0 +1,15 @@
+/* bugSolution.css */
+/* Correcting unit handling */
+.container {
+  width: calc(100% - 20px); /* Corrected: Explicitly use px units */
+}
+
+/* Correcting nested calc() */
+.nested {
+  width: calc(50% - calc(10px + 5%)); /* Corrected: Use parentheses to enforce order of operations */
+}
+
+/*Alternative to avoid nested calc()*/
+.nestedAlternative {
+  width: calc(50% - 10px - 5%); /*Simplify calculation to remove nesting*/
+}
